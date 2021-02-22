@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+
+        <div class="header-block">
+        <div class="logo-and-nav">
+
+        <img src="#" class="logoimg" alt="LOGO">
+
+        <div class="header-navigation-block">
+
+        <nav class="header-navigation">
+            <ul class="main-nav-ul">
+
+                <li>
+                    <a class="menu_link" href="#">Главная</a>
+                </li>
+
+
+                <li>
+                    <a class="menu_link" href="#">Оборудование</a>
+                <ul class="sub-nav-ul">
+                    <li>
+                        <a href="#" class="sub_menu_link">Категория1</a>
+                        <a href="#" class="sub_menu_link">Категория2</a>
+                        <a href="#" class="sub_menu_link">Категория3</a>
+                        <a href="#" class="sub_menu_link">Категория4</a>
+                    </li>
+                </ul>
+                </li>
+
+
+                <li>
+                    <a class="menu_link" href="#">Автохимия</a>
+                <ul class="sub-nav-ul">
+                    <li>
+                        <a href="#" class="sub_menu_link">Категория1</a>
+                        <a href="#" class="sub_menu_link">Категория2</a>
+                        <a href="#" class="sub_menu_link">Категория3</a>
+                        <a href="#" class="sub_menu_link">Категория4</a>
+                    </li>
+                </ul>
+                </li>
+
+
+                <li>
+                    <a class="menu_link" href="#">Покупателям</a>
+                </li>
+
+
+                <li>
+                    <a class="menu_link" href="#">Контакты</a>
+                </li>
+
+
+                <li>
+                    <a class="menu_link" href="#">О нас</a>
+                </li>
+            </ul>
+
+
+        </nav>
+        </div>
+
+            <form class="mainform" action="">
+
+            <div class="inputs">
+                <input class="inputemail" type="email">
+                <input class="inputpass" type="password">
+            </div>
+
+            <div class="reglog">
+
+                <button class="buttonsignin">Вход</button>
+                <button class="buttonsignin">Регистрация</button>
+
+
+            </div>
+
+        <section class="checkboxaccount">
+            <a class="forgotpass" href="#">Забыли пароль?</a>
+            <input class="checkboxshowpass" type="checkbox" >
+            <label class="checkbox-label" for="show-pass">Показать пароль</label>
+        </section>
+
+            </form>
+        </div>
+        </div>
+
+        <div class="searchfield">
+            <input type="text" placeholder="Искать по названию" class="searchtext">
+            <button type="text" class="btnsearch">Поиск!</button>
+        </div>
+
+    </header>
+
+    <div class="withoutheader">
+
+    <main>
+
+        <div class="slider">
+
+        <div class="aslider"><a class="previous" onclick="previousSlide()">&#10094;</a></div>
+
+        <div class="images">
+        <div class="item"><img class="imgslider" src="https://s3.tproger.ru/uploads/2020/07/field.jpg" alt="" data-text="Я ПЕРВАЯ ФОТКА!"></div>
+        <div class="item"><img class="imgslider" src="https://s3.tproger.ru/uploads/2020/07/rose.jpg" alt="" data-text="Я ВТОРАЯ ФОТКА!"></div>
+        <div class="item"><img class="imgslider" src="https://s3.tproger.ru/uploads/2020/07/leaf.jpg" alt="" data-text="Я ТРЕТЬЯ ФОТКА"></div>
+        </div>
+
+        <div class="aslider"><a class="next" onclick="nextSlide()">&#10095;</a></div>
+    </div>
+
+
+
+    <section class="categories">
+        <figure class="catfigure"><a href="#"><img class="catimg" src="him.png" alt=""></a><figcaption>МОЮЩИЕ СРЕДСТВА</figcaption></figure>
+        <figure class="catfigure"><a href="#"><img class="catimg" src="him.png" alt=""></a><figcaption>МОЮЩИЕ СРЕДСТВА</figcaption></figure>
+        <figure class="catfigure"><a href="#"><img class="catimg" src="him.png" alt=""></a><figcaption>МОЮЩИЕ СРЕДСТВА</figcaption></figure>
+        <figure class="catfigure"><a href="#"><img class="catimg" src="him.png" alt=""></a><figcaption>МОЮЩИЕ СРЕДСТВА</figcaption></figure>
+        <figure class="catfigure"><a href="#"><img class="catimg" src="him.png" alt=""></a><figcaption>МОЮЩИЕ СРЕДСТВА</figcaption></figure>
+        <figure class="catfigure"><a href="#"><img class="catimg" src="him.png" alt=""></a><figcaption>МОЮЩИЕ СРЕДСТВА</figcaption></figure>
+        <figure class="catfigure"><a href="#"><img class="catimg" src="him.png" alt=""></a><figcaption>МОЮЩИЕ СРЕДСТВА</figcaption></figure>
+        <figure class="catfigure"><a href="#"><img class="catimg" src="him.png" alt=""></a><figcaption>МОЮЩИЕ СРЕДСТВА</figcaption></figure>
+    </section>
+
+
+
+    <section class="sectionhits">
+
+    <div class="hits-block">
+    <div class="h2-hits-block"> <h2 class="hh2">ХИТЫ ПРОДАЖ!</h2></div>
+        <div class="hitsblock">
+            <figure><a href="#"><img src="items/shlang1.jpg" class="hitsimg" alt=""></a><figcaption>ТОВАР СО СКИДКОЙ! </figcaption><button class="item-button-more">Подробнее</button></figure>
+            <figure><a href="#"><img src="items/shlang1.jpg" class="hitsimg" alt=""></a><figcaption>ТОВАР СО СКИДКОЙ! </figcaption><button class="item-button-more">Подробнее</button></figure>
+            <figure><a href="#"><img src="items/shlang1.jpg" class="hitsimg" alt=""></a><figcaption>ТОВАР СО СКИДКОЙ! </figcaption><button class="item-button-more">Подробнее</button></figure>
+            <figure><a href="#"><img src="items/shlang1.jpg" class="hitsimg" alt=""></a><figcaption>ТОВАР СО СКИДКОЙ! </figcaption><button class="item-button-more">Подробнее</button></figure>
+            <figure><a href="#"><img src="items/shlang1.jpg" class="hitsimg" alt=""></a><figcaption>ТОВАР СО СКИДКОЙ! </figcaption><button class="item-button-more">Подробнее</button></figure>
+            <figure><a href="#"><img src="items/shlang1.jpg" class="hitsimg" alt=""></a><figcaption>ТОВАР СО СКИДКОЙ! </figcaption><button class="item-button-more">Подробнее</button></figure>
+            <figure><a href="#"><img src="items/shlang1.jpg" class="hitsimg" alt=""></a><figcaption>ТОВАР СО СКИДКОЙ! </figcaption><button class="item-button-more">Подробнее</button></figure>
+            <figure><a href="#"><img src="items/shlang1.jpg" class="hitsimg" alt=""></a><figcaption>ТОВАР СО СКИДКОЙ! </figcaption><button class="item-button-more">Подробнее</button></figure>
+        </div>
+
+        <div class="showallbutton-block">
+        <button class="showallbutton">Посмотреть все</button>
+        </div>
+        </div>
+
+    </section>
+
+
+        <section class="wetrust">
+            <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
+            <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
+            <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
+            <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
+        </section>
+
+
+   <section class="about">
+
+    <div class="h2letusknow">
+        <h2>Будем знакомы</h2>
+    </div>
+
+        <div class="abouttextblock">
+
+        <h3>О нас</h3>
+
+        <div class="abouttext"><p>Интернет магазин автозапчастей «Вест-Oйл» предлагает качественные и недорогие товары в Ростове-на-Дону. В каталоге магазине можно найти всевозможные запчасти для авто, масла, смазки, АКБ, автохимию, фильтры, аксессуары. Здесь продаются запчасти для иномарок японского, китайского, европейского производства и отечественных машин.</p></div>
+        <div class="abouttext"><h3>Что мы предлагаем?</h3><p>Владельцу легкового автомобиля в Ростове-на-Дону, который намерен купить автозапчасти, достаточно зайти на сайт westoil.ru и его проблема будет решена. На складе магазина есть детали для новых и снятых с производства легковых автомобилей, популярные запчасти всегда в наличии, редкие позиции доставляют по мере необходимости. В случае необходимости сотрудники компании всегда готовы проконсультировать вас и помочь быстро и правильно подобрать нужные запчасти. Клиентами "Вест-Ойла" уже стали многие автолюбители Ростова-на-Дону - будем ради видеть и вас в их числе!</p></div>
+        <div class="abouttext"><h3>Наши партнеры</h3><p> Компания ООО ТД Вест-Ойл уже 20 лет существует на автомобильном рынке и за это время получила доверие многих клиентов. У компании открыты филиалы в таких городах как: Ростов-на-Дону, Москва, Крым, Таганрог, Краснодар, Ставрополь, Пятигорск, Адлер, Волгоград. Фирма специализируется на оптовой и розничной торговле товаров для автомобилей. Наш ассортимент составляет около 30 000 наименований в наличие и более    1 000 000 под заказ!!! В их числе: автозапчасти на иномарки и автомобили отечественного производства, моторные масла, автомобильная химия и косметика, спецжидкости, аккумуляторные батареи, аксессуары, автолампы, смазки и многое другое.</p></div>
+        <div class="abouttext"><h3>Сотрудничество</h3><p>Для удобства клиентов предусмотрено несколько способов оплаты. Продажа автозапчастей производится по наличному, безналичному расчету и при помощи виртуальных платежных систем. Заказать и оплатить товар можно в течение нескольких минут, не покидая удобного кресла или рабочего кабинета.</p></div>
+       </div>
+
+    </section>
+    </main>
+
+
+    <footer>
+
+    <div class="footerblock">
+
+    <nav class="footernav">
+
+            <li><a>Главная</a></li>
+            <li><a>Каталог</a></li>
+            <li><a>Автохимия</a></li>
+            <li><a>Покупателям</a></li>
+            <li><a>Контакты</a></li>
+            <li><a>О нас</a></li>
+
+    </nav>
+
+    <div class="copyright">
+        <p>Copyright 2021</p>
+    </div>
+    </div>
+
+    </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="sliderjs/script.js"></script>
+</body>
+</html>
