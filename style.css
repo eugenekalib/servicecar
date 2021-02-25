@@ -3,7 +3,8 @@ body {
     min-height: 100%;
     background-color: rgb(206, 235, 251);
     height: 100%;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 
@@ -13,6 +14,15 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+button {
+    border-radius: 10px;
+}
+
+header input {
+    border-radius: 10px;
 }
 
 
@@ -53,7 +63,7 @@ li {
 }
 
 
-.mainnav a {
+.header-navigation a {
     text-decoration: none;
 
 }
@@ -77,34 +87,41 @@ li {
 
 
 .menu_link {
-    color: palevioletred;
+    color: black;
 }
 
 
 .menu_link:hover {
-    color: rgba(92, 255, 160, 50%);
+    color: rgba(0, 0, 0, 20%);
 }
 
 
 .sub-nav-ul {
+    padding-top: 50px;
     z-index: 100;
     display: none;
     position: absolute;
     left: 0;
-    top: 20px;
-    background-color: chocolate;
+    /* top: 0; */
+    background-color: black;
+    opacity: 0.75;
 
 }
-
 
 .sub-sub-nav-ul {
     display: none;
 }
 
+.sub-sub-nav-ul a{
+    color: white;
+}
+
 
 .sub_menu_link {
-    color: aqua;
+    color: white;
 }
+
+
 
 
 .mainform {
@@ -128,7 +145,7 @@ li {
 
 
 .inputs input:focus {
-    box-shadow: 0 0 10px 5px rgba(92, 255, 160, 50%);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 20%);
 }
 
 
@@ -143,7 +160,8 @@ li {
 
 
 .reglog button:hover {
-    background-color: rgba(92, 255, 160, 50%);
+    background-color: rgba(0, 0, 0, 20%);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -172,6 +190,12 @@ li {
     display: block;
     margin: 6px;
     text-decoration: none;
+    color: black;
+}
+
+
+.forgotpass:hover {
+    color: rgba(0, 0, 0, 20%);
 }
 
 
@@ -196,7 +220,7 @@ li {
 }
 
 .searchtext:focus {
-    box-shadow: 0 0 10px 5px rgba(92, 255, 160, 50%);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 20%);
 }
 
 
@@ -207,7 +231,8 @@ li {
 }
 
 .btnsearch:hover {
-    background-color: rgba(92, 255, 160, 50%);
+    background-color: rgba(0, 0, 0, 20%);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -222,6 +247,26 @@ li {
     width: 85%;
     margin: 0 auto;
     border: 5px solid black;
+}
+
+
+.slick-arrow::before {    /*стили для всех стрелок*/
+    color: black;
+    position: absolute;
+    font-size: 30px;
+
+}
+
+
+.slick-prev::before {        /*стили для стрелки назад*/
+    left: 50px;
+    z-index: 100;
+}
+
+
+.slick-next::before {        /*стили для стрелки вперед*/
+    right: 50px;
+    z-index: 100;
 }
 
 
@@ -268,6 +313,11 @@ main {
 }
 
 
+.categories figure:hover {
+    background-color: rgba(0, 0, 0, 10%);
+}
+
+
 .catfigure {
     border: 3px solid blue;
     display: flex;
@@ -281,6 +331,11 @@ main {
     text-decoration: none;
 }
 
+
+.catfigure img {
+    margin: 5px 10px;
+    border-radius: 10px;
+}
 
 
 .catimg {
@@ -301,30 +356,6 @@ main {
 }
 
 
-.hh2 {
-    margin-left: 3px;
-}
-
-
-.item-button-more {
-    width: 100%;
-    height: 25px;
-}
-
-
-.showallbutton-block {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-
-.showallbutton {
-    width: 150px;
-    height: 30px;
-}
-
-
 .hitsblock {
     border: 5px solid yellow;
     display: flex;
@@ -341,6 +372,63 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+
+.hitsblock figure:hover {
+    background-color: rgba(0, 0, 0, 10%);
+}
+
+
+.hits-block button:hover {
+    background-color: rgba(0, 0, 0, 20%);
+    color: rgb(255, 255, 255);
+}
+
+
+.hitsblock img {
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+
+.hitsblock figcaption {
+    margin-bottom: 3px;
+}
+
+
+.hh2 {
+    margin-left: 3px;
+}
+
+
+.hitsblock button {
+    width: 150px;
+    height: 25px;
+    margin-bottom: 3px;
+}
+
+
+.pricehits {
+    margin-bottom: 3px;
+}
+
+
+
+
+.showallbutton-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.showallbutton {
+    width: 150px;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
 
 
 .hitsimg {
