@@ -7,15 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
     <link rel="stylesheet" href="style.css">
 
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
 </head>
+
 <body>
 
     <header>
@@ -26,76 +23,40 @@
         <img src="#" class="logoimg" alt="LOGO">
 
         <div class="header-navigation-block">
-
         <nav class="header-navigation">
             <ul class="main-nav-ul">
 
-                <li>
-                    <a class="menu_link" href="#">Главная</a>
+                <li><a class="main-a" href="#">Главная</a></li>
+                <li><a class="main-a" href="#">Оборудование</a>
+                   <div class="uldropdown">
+                        <ul class="sub-nav-ul">
+                            <li><a class="sub_menu_link" href="#" id="0">Категория1</a></li>
+                            <li><a href="#" class="sub_menu_link" id="1">Категория2</a></li>
+                            <li><a href="#" class="sub_menu_link" id="2">Категория3</a></li>
+                            <li><a href="#" class="sub_menu_link" id="3">Категория4</a></li>
+                        </ul>
+                        <ul class="dropdown">
+
+                        </ul>
+                    </div>
                 </li>
-
-
-                <li>
-                    <a class="menu_link" href="#">Оборудование</a>
-                <ul class="sub-nav-ul">
-                    <li><a href="#" class="sub_menu_link">Категория1</a>
-                    <ul class="sub-sub-nav-ul">
-
-                    </ul>
-                    </li>
-                    <li><a href="#" class="sub_menu_link">Категория2</a>
-                    <ul class="sub-sub-nav-ul">
-
-                    </ul>
-                    </li>
-                    <li><a href="#" class="sub_menu_link">Категория3</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория4</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория1</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория2</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория3</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория4</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория1</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория2</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория3</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория4</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория1</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория2</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория3</a></li>
-                    <li><a href="#" class="sub_menu_link">Категория4</a></li>
-
-                </ul>
+                <li><a class="main-a" href="#">Автохимия</a>
+                    <div class="uldropdown">
+                        <ul class="sub-nav-ul">
+                            <li><a class="sub_menu_link" href="#" id="0">Категория1</a></li>
+                            <li><a href="#" class="sub_menu_link" id="1">Категория2</a></li>
+                            <li><a href="#" class="sub_menu_link" id="2">Категория3</a></li>
+                            <li><a href="#" class="sub_menu_link" id="3">Категория4</a></li>
+                        </ul>
+                        <ul class="dropdown">
+                            <li><a href="#">дропдаун</a></li>
+                        </ul>
+                    </div>
                 </li>
-
-
-                <li>
-                    <a class="menu_link" href="#">Автохимия</a>
-                <ul class="sub-nav-ul">
-                    <li>
-                        <a href="#" class="sub_menu_link">Категория1</a>
-                        <a href="#" class="sub_menu_link">Категория2</a>
-                        <a href="#" class="sub_menu_link">Категория3</a>
-                        <a href="#" class="sub_menu_link">Категория4</a>
-                    </li>
-                </ul>
-                </li>
-
-
-                <li>
-                    <a class="menu_link" href="#">Покупателям</a>
-                </li>
-
-
-                <li>
-                    <a class="menu_link" href="#">Контакты</a>
-                </li>
-
-
-                <li>
-                    <a class="menu_link" href="#">О нас</a>
-                </li>
+                <li><a class="main-a" href="#">Покупателям</a></li>
+                <li><a class="main-a" href="#">Контакты</a></li>
+                <li><a class="main-a" href="#">О нас</a></li>
             </ul>
-
-
         </nav>
         </div>
 
@@ -103,23 +64,20 @@
 
             <div class="inputs">
                 <input class="inputemail" type="email">
-                <input class="inputpass" type="password">
+                <input class="inputpass" type="password" id="inputpass">
             </div>
 
             <div class="reglog">
 
                 <button class="buttonsignin">Вход</button>
                 <button class="buttonsignin">Регистрация</button>
-
-
             </div>
 
         <section class="checkboxaccount">
             <a class="forgotpass" href="#">Забыли пароль?</a>
-            <input class="checkboxshowpass" type="checkbox" >
-            <label class="checkbox-label" for="show-pass">Показать пароль</label>
-        </section>
 
+            <label class="checkbox-label" for="show-pass"><input class="checkboxshowpass" type="checkbox">Показать пароль</label>
+        </section>
             </form>
         </div>
         </div>
@@ -130,8 +88,6 @@
         </div>
 
     </header>
-
-
 
     <div class="wrapper">
         <div class="slider">
@@ -144,18 +100,10 @@
             <div class="imageslider"><img src="https://images.unsplash.com/photo-1597404294360-feeeda04612e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""></div>
             <div class="imageslider"><img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""></div>
             <div class="imageslider"><img src="https://images.unsplash.com/photo-1493238792000-8113da705763?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""></div>
-
         </div>
     </div>
 
-
-
-
-
-    <main>
-
-
-
+<main>
 
     <section class="categories">
         <figure class="catfigure"><a href="#"><img class="catimg" src="him.png" alt=""></a><figcaption>МОЮЩИЕ СРЕДСТВА</figcaption></figure>
@@ -173,7 +121,7 @@
     <section class="sectionhits">
 
     <div class="hits-block">
-    <div class="h2-hits-block"> <h2 class="hh2">ХИТЫ ПРОДАЖ!</h2></div>
+        <div class="h2-hits-block"> <h2 class="hh2">ХИТЫ ПРОДАЖ!</h2></div>
         <div class="hitsblock">
             <figure><a href="#"><img src="items/shlang1.jpg" class="hitsimg" alt=""></a><figcaption>Шланг</figcaption><span class="pricehits">25000Р</span><button class="item-button-more">Подробнее</button></figure>
             <figure><a href="#"><img src="items/shlang1.jpg" class="hitsimg" alt=""></a><figcaption>Химия 1</figcaption><span class="pricehits">25000Р</span><button class="item-button-more">Подробнее</button></figure>
@@ -188,26 +136,25 @@
         <div class="showallbutton-block">
         <button class="showallbutton">Посмотреть все</button>
         </div>
-        </div>
-
+    </div>
     </section>
 
 
-        <section class="wetrust">
-            <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
-            <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
-            <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
-            <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
-        </section>
+    <section class="wetrust">
+        <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
+        <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
+        <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
+        <div class="certificate-block"><img class="certificate-img" src="dostoinstva.jpeg" alt=""><div class="trustdiv">Классная компания!</div></div>
+    </section>
 
 
-   <section class="about">
+    <section class="about">
 
-    <div class="h2letusknow">
-        <h2>Будем знакомы</h2>
-    </div>
+        <div class="h2letusknow">
+            <h2>Будем знакомы</h2>
+        </div>
 
-        <div class="abouttextblock">
+    <div class="abouttextblock">
 
         <h3>О нас</h3>
 
@@ -215,39 +162,33 @@
         <div class="abouttext"><h3>Что мы предлагаем?</h3><p>Владельцу легкового автомобиля в Ростове-на-Дону, который намерен купить автозапчасти, достаточно зайти на сайт westoil.ru и его проблема будет решена. На складе магазина есть детали для новых и снятых с производства легковых автомобилей, популярные запчасти всегда в наличии, редкие позиции доставляют по мере необходимости. В случае необходимости сотрудники компании всегда готовы проконсультировать вас и помочь быстро и правильно подобрать нужные запчасти. Клиентами "Вест-Ойла" уже стали многие автолюбители Ростова-на-Дону - будем ради видеть и вас в их числе!</p></div>
         <div class="abouttext"><h3>Наши партнеры</h3><p> Компания ООО ТД Вест-Ойл уже 20 лет существует на автомобильном рынке и за это время получила доверие многих клиентов. У компании открыты филиалы в таких городах как: Ростов-на-Дону, Москва, Крым, Таганрог, Краснодар, Ставрополь, Пятигорск, Адлер, Волгоград. Фирма специализируется на оптовой и розничной торговле товаров для автомобилей. Наш ассортимент составляет около 30 000 наименований в наличие и более    1 000 000 под заказ!!! В их числе: автозапчасти на иномарки и автомобили отечественного производства, моторные масла, автомобильная химия и косметика, спецжидкости, аккумуляторные батареи, аксессуары, автолампы, смазки и многое другое.</p></div>
         <div class="abouttext"><h3>Сотрудничество</h3><p>Для удобства клиентов предусмотрено несколько способов оплаты. Продажа автозапчастей производится по наличному, безналичному расчету и при помощи виртуальных платежных систем. Заказать и оплатить товар можно в течение нескольких минут, не покидая удобного кресла или рабочего кабинета.</p></div>
-       </div>
-
+    </div>
     </section>
-    </main>
+</main>
 
 
-    <footer>
-
+<footer>
     <div class="footerblock">
-
-    <nav class="footernav">
+        <nav class="footernav">
 
             <li><a href="#">Главная</a></li>
-            <li><a>Каталог</a></li>
-            <li><a>Автохимия</a></li>
-            <li><a>Покупателям</a></li>
-            <li><a>Контакты</a></li>
-            <li><a>О нас</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Автохимия</a></li>
+            <li><a href="#">Покупателям</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">О нас</a></li>
 
-    </nav>
-
-
-
+        </nav>
     </div>
 
     <div class="copyright">
         <p>Copyright 2021</p>
     </div>
 
-    </footer>
+</footer>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+<script src="script.js"></script>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>

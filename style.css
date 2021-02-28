@@ -29,7 +29,7 @@ header input {
 .header-block {
     justify-content: center;
     border: 5px solid yellow;
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(0.31,0.42,0.72, 20%);
     display: flex;
     align-self: stretch;
 }
@@ -69,59 +69,51 @@ li {
 }
 
 
-.main-nav-ul {
+.main-nav-ul {        /*Стили для общего меню*/
     display: flex;
     list-style-type: none;
 }
 
 
-.main-nav-ul>li{
+.main-nav-ul > li{        /*Стили для лишек в меню*/
     margin-left: 10px;
     margin-right: 10px;
-
-}
-
-.main-nav-ul>li:hover .sub-nav-ul {
-    display: block;
 }
 
 
-.menu_link {
+.main-a {        /*Стили для ссылок в навигации*/
     color: black;
 }
 
-
-.menu_link:hover {
+.main-a:hover {    /*Наведение на ссылки в меню*/
     color: rgba(0, 0, 0, 20%);
 }
 
+.main-nav-ul > li:hover .sub-nav-ul {        /*Наведение на лишки в меню*/
+/*    display: block;*/
+}
 
-.sub-nav-ul {
+.main-nav-ul > li:hover .uldropdown {        /*Наведение на лишки в меню*/
+    display: flex;
+    flex-direction: row;
+}
+
+
+.sub-nav-ul {        /*Выпадающий список первого уровня*/
+/*
     padding-top: 50px;
     z-index: 100;
     display: none;
-    position: absolute;
     left: 0;
-    /* top: 0; */
     background-color: black;
     opacity: 0.75;
-
+*/
 }
 
-.sub-sub-nav-ul {
-    display: none;
-}
 
-.sub-sub-nav-ul a{
+.sub_menu_link {        /*Ссылка в выпадающем первом меню*/
     color: white;
 }
-
-
-.sub_menu_link {
-    color: white;
-}
-
-
 
 
 .mainform {
@@ -175,22 +167,22 @@ li {
 
 .checkboxaccount {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    margin: 3px;
 }
 
 
 .checkbox-label {
-    display: block;
+    display: inline-block;
 }
 
 
 .forgotpass {
-    display: block;
-    margin: 6px;
+    display: inline-block;
     text-decoration: none;
     color: black;
+    width: 50%;
+    border: 3px solid white;
 }
 
 
@@ -200,7 +192,10 @@ li {
 
 
 .checkboxshowpass {
-    display: block;
+    display: inline-block;
+
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -324,6 +319,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
 
@@ -371,6 +367,9 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 170px;
+    height: 240px;
+    border-radius: 10px;
 }
 
 
@@ -472,7 +471,7 @@ form {
 
 
 .certificate-img {
-    border-radius: 50%;
+    border-radius: 10px;
     max-width: 150px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -542,8 +541,9 @@ footer {
 }
 
 
-.footernav li a {
+.footernav a {
     text-decoration: none;
+    color: black;
 }
 
 
@@ -556,4 +556,27 @@ footer {
 .copyright p {
     display: inline-block;
     margin-left: 25px;
+}
+
+.show-password {
+
+}
+
+.sub-sub-nav-ul {
+
+}
+
+.dropdown {
+    border: 3px solid blue;
+    background-color: black;
+    display: none;
+}
+
+.uldropdown {
+    z-index: 100;
+    display: none;
+    left: 0;
+    background-color: black;
+    opacity: 0.75;
+    position: absolute;
 }
