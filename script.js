@@ -30,27 +30,47 @@ $(document).ready(function(){
 
 
 
-        $('.sub-nav-ul li').mouseenter(function(event) {
-            $('.dropdown').show();
+//        $('.uldropdown').mouseenter(function(event) {
+//            $('.dropdown').show();
+//        });
+
+
+
+    $('.sub-nav-ul li').mouseenter(function(event) {
+        $('.dropdown').show();
             let nameOfIndex = event.target.id;
                 $.each(MainArray[nameOfIndex], function(index, value) {
-                    $('.dropdown').append('<li><a href="#" class="sub_sub_menu_link">' + value + '</a></li>');
+                    $('.dropdown').append('<li class="drop-li"><a href="#" class="sub_sub_menu_link">' + value + '</a></li>');
                 });
             console.log(event.target.id);
         });
 
 
-        $('.sub-nav-ul li').mouseleave(function() {
-            $('.dropdown').empty();
-            $('.dropdown').hide();
+
+        $('.drop-li').mouseenter(function() {
+            console.log('наведение');
         });
+
+        $('.drop-li').mouseleave(function() {
+//            if ($(this).attr('data-id') != $('.dropdown li').attr('data-id')) {
+//
+//            }
+            console.log('действие есть!');
+            $('.dropdown').hide();
+            $('.dropdown').empty();
+        });
+
+//        $('.drop-li').mouseleave(function () {
+//
+//        });
+
+
 
 
         let MainArray = [[nameOfCategorys], [nameOfCategorysTwo], [nameOfCategorysThree], [nameOfCategorysFour]];
         console.log(MainArray);
 
-        let rur = 150 * 0.0110290428;
-    console.log(rur);
+
 
 //        subMenuLink.mouseenter(function() {
 //        subSubNavUl.empty();
@@ -88,6 +108,13 @@ $(document).ready(function(){
             consol.log('NOT');
         }
     });
+
+
+//    $('.certificate-block .trustdiv').each(function() {   //each перебор массива
+//        if($(this).text()=="Классная компания!2") {
+//            $(this).fadeOut(1000);
+//        }
+//    });
 
 
 });
