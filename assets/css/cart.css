@@ -1,0 +1,140 @@
+.shopping-cart {
+    flex-direction: column;
+    width: 85%;
+}
+.shopping-cart li {
+    border: 3px solid black;
+    margin-top: 20px;
+}
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 70px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.cart-img {
+    border-radius: 1.5em;
+    width: 60px;
+    margin-left: 20px;
+}
+.cart-name {
+    flex-grow: 5;
+    flex-basis: 300px;
+    padding-left: 15px;
+}
+.count-item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    height: 30px;
+}
+.count-input {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+}
+.delete-button {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto 0;
+}
+.minus-count-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.plus-count-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.final-form {
+    display: flex;
+    flex-direction: column;
+}
+.total {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ship-block {
+    width: 85%;
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.sumbit-ship {
+    margin-top: 15px;
+    height: 35px;
+    width: 120px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    background-color: lightgreen;
+    align-self: center;
+    cursor: pointer;
+}
+.sumbit-ship:disabled{
+    background-color: gray;
+    cursor: default;
+}
+.total-val {
+    align-self: center;
+}
+.burger {
+    display: none;
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.adress-ship {
+    height: 40px;
+    margin-top: 15px;
+}
+.privacy-policy-cart{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+}
+.checkbox-block{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .cart-img-block {
+        display: none;
+    }
+    .logoimg {
+        width: 200px;
+    }
+    .main-nav-ul {
+        display: none;
+    }
+}
